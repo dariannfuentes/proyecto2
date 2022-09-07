@@ -1,5 +1,5 @@
 <!--<p>productos works!</p>-->
-<br>
+<!--<br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
@@ -56,5 +56,16 @@
         <button type="button" class="btn btn-warning">Comprar</button>
       </div>
     </div>
+  </div>
+</div>-->
+<div class="row">
+  <div class="col-4" *ngFor="let objeto of productos">
+    <p>{{objeto.nombre}}</p>
+    <br>
+    <p>{{objeto.marca}}</p>
+    <br>
+    <p>{{objeto.categoria}}</p>
+    <br>
+    <p>{{objeto.precio}}</p>
   </div>
 </div>
